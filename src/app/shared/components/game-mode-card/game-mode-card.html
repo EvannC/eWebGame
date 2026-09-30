@@ -1,0 +1,7 @@
+<div class="border border-white/10 rounded-xl p-6 flex flex-col gap-4 bg-white/15">
+  <h3 class="text-center text-2xl font-bold">{{ title() }}</h3>
+
+  <p class="text-zinc-300">{{ description() }}</p>
+
+  <button (click)="selected.emit(title())" class="outline outline-1 outline-white/40 rounded-xl cursor-pointer hover:bg-white/10 transition">Choisir ce mode</button>
+</div>
